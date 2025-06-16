@@ -1,0 +1,47 @@
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #b81a24; /* KRA red */
+  color: white;
+  border-radius: 50%;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  right: 70px;
+  bottom: 50%;
+  transform: translateY(50%);
+  background-color: #b81a24;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadePop 2s ease forwards;
+}
+
+@keyframes fadePop {
+  0% {
+    opacity: 0;
+    transform: translateY(50%) scale(0.95);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(50%) scale(1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

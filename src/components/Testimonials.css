@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+  #testimonials .carousel .row {
+    flex-direction: column;
+  }
+
+  #testimonials .col {
+    width: 100%;
+  }
+}
