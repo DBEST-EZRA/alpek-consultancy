@@ -66,9 +66,12 @@ const ContactSection = () => {
                   <Col>
                     <Form.Select required style={{ opacity: 0.8 }}>
                       <option>Select a service</option>
-                      <option>Bookkeeping</option>
-                      <option>Tax Filing</option>
-                      <option>Business Registration</option>
+                      <option>Tax Services</option>
+                      <option>Accounting Services</option>
+                      <option>Business Registration Services</option>
+                      <option>HR Payrolls</option>
+                      <option>Business Plans & POS Systems</option>
+                      <option>Company Registration</option>
                     </Form.Select>
                   </Col>
                 </Row>
