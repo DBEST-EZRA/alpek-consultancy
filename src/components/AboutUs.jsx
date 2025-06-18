@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const AboutUs = () => {
   return (
-    <section className="py-5" style={{ backgroundColor: "#ffffff" }}>
+    <section className="py-5" style={{ backgroundColor: "#ffffff" }} id="about">
       <div className="container">
         <div className="row align-items-center">
           {/* Text Section */}

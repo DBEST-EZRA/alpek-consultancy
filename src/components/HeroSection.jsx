@@ -15,7 +15,11 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="position-relative min-vh-100 bg-black text-white d-flex align-items-center">
+    <div
+      className="position-relative bg-black text-white d-flex align-items-center"
+      id="home"
+      style={{ minHeight: "calc(100vh - 86px)" }}
+    >
       {/* Background Image */}
       <div className="position-absolute top-0 start-0 w-100 h-100 z-0">
         <img src={HeroImage} alt="" className="w-100 h-100 object-fit-cover" />
@@ -53,11 +57,14 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="d-flex gap-3 justify-content-center justify-content-lg-start mt-5">
-            <a href="#" className="btn btn-light text-black rounded-pill px-4">
+            <a
+              href="#contact"
+              className="btn btn-light text-black rounded-pill px-4"
+            >
               Get Free Consultation
             </a>
             <a
-              href="#"
+              href="#services"
               className="btn btn-outline-light rounded-pill d-flex align-items-center px-4"
             >
               View Services

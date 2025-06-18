@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import "./NavbarStyles.css"; // <- You'll add hover styles here
 
 const NavbarComponent = () => {
   const whatsappLink = `https://wa.me/254705194260?text=${encodeURIComponent(
@@ -13,7 +14,7 @@ const NavbarComponent = () => {
       bg="white"
       variant="light"
       sticky="top"
-      className="shadow-sm"
+      className="shadow-sm py-3" // padding top & bottom
     >
       <Container>
         {/* Brand */}
@@ -31,16 +32,16 @@ const NavbarComponent = () => {
           className="justify-content-between"
         >
           <Nav className="mx-auto">
-            <Nav.Link href="#home" className="mx-2">
+            <Nav.Link href="#home" className="mx-2 nav-link-hover">
               Home
             </Nav.Link>
-            <Nav.Link href="#about" className="mx-2">
+            <Nav.Link href="#about" className="mx-2 nav-link-hover">
               About Us
             </Nav.Link>
-            <Nav.Link href="#services" className="mx-2">
+            <Nav.Link href="#services" className="mx-2 nav-link-hover">
               Services
             </Nav.Link>
-            <Nav.Link href="#contact" className="mx-2">
+            <Nav.Link href="#contact" className="mx-2 nav-link-hover">
               Contact
             </Nav.Link>
           </Nav>

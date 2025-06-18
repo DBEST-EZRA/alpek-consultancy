@@ -16,6 +16,7 @@ const ContactSection = () => {
         background: "linear-gradient(135deg, #b81a24, #000428)",
         width: "100%",
       }}
+      id="contact"
     >
       <Container>
         <div className="text-center mb-5">
