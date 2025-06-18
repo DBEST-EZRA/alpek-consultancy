@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../assets/react.svg"; // Replace with your actual image path
+import aboutImage from "../assets/lower.webp"; // Replace with your actual image path
 import { FaCertificate } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 

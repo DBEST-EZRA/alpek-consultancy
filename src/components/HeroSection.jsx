@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaCheckCircle, FaArrowDown } from "react-icons/fa";
 import "./HeroSection.css"; // Ensure your CSS is linked
+import HeroImage from "../assets/test4.jpg";
 
 const HeroSection = () => {
   const features = [
@@ -17,11 +18,7 @@ const HeroSection = () => {
     <div className="position-relative min-vh-100 bg-black text-white d-flex align-items-center">
       {/* Background Image */}
       <div className="position-absolute top-0 start-0 w-100 h-100 z-0">
-        <img
-          src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/hero/3/background.png"
-          alt=""
-          className="w-100 h-100 object-fit-cover"
-        />
+        <img src={HeroImage} alt="" className="w-100 h-100 object-fit-cover" />
       </div>
 
       {/* Content */}
