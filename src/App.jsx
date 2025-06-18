@@ -2,6 +2,7 @@ import AboutUs from "./components/AboutUs";
 import ContactSection from "./components/ContactSection";
 import FloatingWhatsAppButton from "./components/FloatingWhatsAppButton";
 import Footer from "./components/Footer";
+import HeroSection from "./components/HeroSection";
 import MoreServices from "./components/MoreServices";
 import NavbarComponent from "./components/NavbarComponent";
 import Services from "./components/Services";
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <NavbarComponent />
+      <HeroSection />
       <Services />
       <AboutUs />
       <MoreServices />
