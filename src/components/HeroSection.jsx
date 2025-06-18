@@ -70,7 +70,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Down Arrow */}
-      <div className="position-absolute bottom-0 start-50 translate-middle-x mb-4 z-2">
+      <div className="position-absolute bottom-0 start-50 translate-middle-x mb-5 z-2">
         <FaArrowDown className="text-warning fs-2 bounce-arrow" />
       </div>
     </div>
