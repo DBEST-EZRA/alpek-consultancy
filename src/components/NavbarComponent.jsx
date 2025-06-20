@@ -20,7 +20,7 @@ const NavbarComponent = () => {
         {/* Brand */}
         <Navbar.Brand href="#home" className="fw-bold fs-5">
           <span style={{ color: "#b81a24" }}>ALPEK</span>{" "}
-          <span style={{ color: "#1e293b" }}>TAX & ACCOUNTING</span>
+          <span style={{ color: "#1e293b" }}>CONSULTANCY</span>
         </Navbar.Brand>
 
         {/* Toggle for mobile */}

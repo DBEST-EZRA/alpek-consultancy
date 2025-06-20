@@ -9,7 +9,7 @@ const Footer = () => {
         <Row className="gy-4">
           <Col md={3}>
             <h4 className="fw-bold text-white">
-              <span className="text-warning">Alpek</span> Tax
+              <span className="text-warning">Alpek</span> Consultancy
             </h4>
             <p>
               Professional CPA services for Kenyan businesses. Expert

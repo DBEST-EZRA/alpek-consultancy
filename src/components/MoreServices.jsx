@@ -5,7 +5,7 @@ import "./MoreServices.css";
 
 const moreServices = [
   {
-    title: "HR Payrolls",
+    title: "HR Services",
     icon: <FaUserTie size={40} className="mb-3 text-danger" />,
     description: "Simplified and accurate payroll solutions for your team.",
     list: ["HR Audits", "HR Planning", "HR Advisory", "Payroll Management"],

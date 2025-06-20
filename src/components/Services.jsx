@@ -20,10 +20,9 @@ const services = [
       "Monthly Statutory Returns",
       "Bank Reconciliation",
       "Book Keeping Services",
-      "Tally",
-      "Quickbooks",
-      "Sage & Xero",
-      "Training and Integration",
+      "Tally Training and Integration",
+      "Quickbooks Training and Integration",
+      "Sage & Xero Training and Integration",
     ],
   },
   {
