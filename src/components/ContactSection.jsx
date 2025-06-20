@@ -15,9 +15,11 @@ import {
   FaMapMarkerAlt,
   FaClock,
   FaCheckCircle,
+  FaTimesCircle,
 } from "react-icons/fa";
 import { db } from "./Config.js"; // adjust if needed
 import { collection, addDoc } from "firebase/firestore";
+import { serverTimestamp } from "firebase/firestore";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +42,6 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validation: ensure all fields are filled
     const { name, email, phone, service, message } = formData;
     if (!name || !email || !phone || !service || !message) {
       alert("Please fill all fields.");
@@ -49,7 +50,11 @@ const ContactSection = () => {
 
     setIsLoading(true);
     try {
-      await addDoc(collection(db, "messages"), formData);
+      await addDoc(collection(db, "messages"), {
+        ...formData,
+        timestamp: serverTimestamp(), // <-- timestamp added
+      });
+
       setShowSuccessModal(true);
       setFormData({
         name: "",
@@ -227,7 +232,9 @@ const ContactSection = () => {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title>Message Sent!</Modal.Title>
+          <Modal.Title>
+            <FaCheckCircle className="text-success me-2" /> Success
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           Thank you! We’ve received your message. We’ll get back to you shortly.
@@ -246,7 +253,9 @@ const ContactSection = () => {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title>Submission Failed</Modal.Title>
+          <Modal.Title>
+            <FaTimesCircle className="text-danger me-2" /> Error
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           Oops! Something went wrong. Please try again later.
